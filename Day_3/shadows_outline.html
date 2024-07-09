@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and outline</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            /* background-color: orange; */
+            padding: 5px;
+            border: 2px solid red;
+            /* box-shadow: inset 5px 5px 20px #7b0c0c; */
+            /* box-shadow: 10px 5px 20px #7b0c0c; */
+        }
+
+        .text_shadow {
+            text-shadow: 5px 10px 5px rgb(13, 202, 66);
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            /* background-color: orange; */
+            padding: 5px;
+            border: 2px solid red;
+            outline: 5px solid orange;
+            outline-offset: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <p>BOX</p>
+    </div>
+    <p class="text_shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero ex ipsum!
+    </p>
+    <div class="box1">
+        <p>lamam</p>
+    </div>
+</body>
+
+</html>

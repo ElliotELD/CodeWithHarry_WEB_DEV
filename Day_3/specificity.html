@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity</title>
+    <style>
+        .main {
+            background-color: black;
+            color: red;
+        }
+
+        #blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  !important keyword can override inlinecss -->
+    <!-- inline is 1st priority -->
+    <!-- id is 2st priority -->
+    <!-- class or attribute is 3st priority -->
+    <!-- element is 4st priority -->
+    <!-- universal selector -->
+
+    <div class="main" id="blue">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+
+</html>

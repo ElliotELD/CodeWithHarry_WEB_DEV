@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(54, 57, 78);
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+        }
+
+        nav {
+            background-color: rgb(109, 105, 99);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            /* Ensure the navbar stays on top */
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            /* Ensure spacing */
+        }
+
+        nav ul li {
+            padding: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero {
+            width: 100%;
+            height: 80vh;
+            background-color: rebeccapurple;
+            padding-top: 100px;
+            /* Adjust padding for fixed navbar */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero_left,
+        .hero_right {
+            width: 400px;
+            height: 400px;
+        }
+
+        .hero_left {
+            background-color: rgb(178, 151, 99);
+        }
+
+        .hero_right {
+            background-color: rgb(96, 155, 130);
+        }
+
+        .content-text {
+            width: 100%;
+            height: 20vh;
+            background-color: rgb(42, 40, 55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-text h2 {
+            color: #fff;
+            padding: 40px;
+            border: 2px solid lightblue;
+            border-radius: 50px;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fix-circle {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: fixed;
+            top: 83%;
+            left: 92%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero_left"></div>
+        <div class="hero_right"></div>
+    </div>
+    <div class="content-text">
+        <h2>Welcome to learn elliot</h2>
+    </div>
+    <div class="fix-circle"></div>
+    <footer>
+        <p>LOREM FOOTER @COPYRIGHTS</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+    background-position: center center;
+    height: 60vh;
+    position: relative;
+}
+
+.main .black-box {
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    /* background-color: rgb(153, 151, 51); */
+    width: 80vw;
+    height: 62px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    /* height: 10vh; */
+    padding: 22px;
+
+}
+
+nav div {
+    position: relative;
+
+    z-index: 10;
+}
+
+nav img {
+    /* color: red; */
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    gap: 15px;
+}
+
+.hero span {
+    text-align: center;
+}
+
+.hero span:nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 46px;
+}
+
+.hero span:nth-child(2) {
+    font-size: 28px;
+}
+
+.separation {
+    height: 11px;
+    width: 100%;
+    background-color: rgba(78, 76, 76, 0.608);
+}
+
+.hero-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 9px 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.main input {
+    padding: 11px 80px 10px 13px;
+    background-color: rgba(22, 23, 23, 0.389);
+    border: 1px solid gray;
+
+    border-radius: 4px;
+    color: white
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 11px 28px;
+}

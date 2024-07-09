@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            margin: 50px auto;
+            padding: 50px;
+        }
+
+        .box {
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            /*  */
+            /* animation-name: elliotAnimation;
+            animation-duration: 3s;
+            animation-delay: 250ms;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+
+
+            /* animation: elliotAnimation 3s ease-in-out 250ms infinite alternate-reverse; */
+            animation: secanimation 5s ease-in-out 250ms infinite alternate-reverse;
+            /* ,  */
+            /* secanimation 5s ease-in-out 250ms infinite alternate-reverse; */
+        }
+
+        /* 
+        @keyframes elliotAnimation {
+            from {
+                transform: translate(0px);
+
+            }
+
+            to {
+                transform: translate(300px);
+
+            }
+        } */
+
+
+        @keyframes secanimation {
+            0% {
+                background-color: orange;
+            }
+
+            25% {
+                background-color: rgb(128, 255, 0);
+            }
+
+            50% {
+                background-color: rgb(0, 170, 255);
+            }
+
+            75% {
+                background-color: rgb(255, 0, 242);
+            }
+
+            100% {
+                background-color: rgb(255, 55, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Batman
+        </div>
+    </div>
+</body>
+
+</html>

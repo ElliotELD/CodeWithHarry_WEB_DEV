@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container {
+            background-color: lightblue;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            width: 5vw;
+            height: 4vh;
+            background-color: darksalmon;
+
+            /* transition important */
+            /* transition-property: all; */
+            /* transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: .1s; */
+
+            /* shorthand */
+            transition: all .1s ease-in-out .1s;
+        }
+
+        .translate {
+            transform: rotate(45deg);
+            /* transform: translateX(10vw)translateY(10vh); */
+            background-color: orangered;
+            /* transform: scale(50%); */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- transition means to go from one state to another state very smoothly -->
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+
+</html>

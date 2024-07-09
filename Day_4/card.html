@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: gray;
+            background-image: url(https://images.unsplash.com/photo-1624976173584-8cf403b68ffd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D);
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            /* filter: blur(5px); */
+            filter: grayscale();
+        }
+
+        .card {
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            border-radius: 14px;
+            /*  */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+
+
+
+
+        img {
+            width: 300px;
+            /* height: 250px; */
+            padding: 10px;
+            border-radius: 15px;
+
+
+        }
+
+        .capsules {
+            padding-left: 10px;
+        }
+
+        .capsules span {
+            border: 1.5px solid gray;
+            padding: 3px 7px;
+            border-radius: 50px;
+        }
+
+        .caption {
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+
+        .caption h3 {
+            /* padding-bottom: 5px; */
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1624976173584-8cf403b68ffd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="image of car">
+        </div>
+        <div class="capsules">
+            <span>Car</span>
+            <span>Sports</span>
+        </div>
+        <div class="caption">
+            <h3>Lamborgini</h3>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .card {
+            border: 2px solid lightcoral;
+            margin: 2px;
+            display: flow-root;
+        }
+
+        .card img {
+            width: 200px;
+            border-radius: 15cap;
+            float: left;
+        }
+
+        .card:nth-child(2) {
+            clear: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .cards>card*5 -->
+    <div class="cards">
+        <div class="card">
+            <img src="/pic.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam iusto magni, aspernatur et dolorem
+                eaque esse odio laudantium quis officia hic tempora, quibusdam magnam dicta animi repudiandae rerum
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam iusto magni, aspernatur et dolorem
+                eaque esse odio laudantium quis officia hic tempora, quibusdam magnam dicta animi repudiandae rerum
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam iusto magni, aspernatur et dolorem
+                eaque esse odio laudantium quis officia hic tempora, quibusdam magnam dicta animi repudiandae rerum
+                perferendis!
+
+            </p>
+        </div>
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam iusto magni, aspernatur et dolorem
+                eaque esse odio laudantium quis officia hic tempora, quibusdam magnam dicta animi repudiandae rerum
+                perferendis!
+
+            </p>
+        </div>
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam iusto magni, aspernatur et dolorem
+                eaque esse odio laudantium quis officia hic tempora, quibusdam magnam dicta animi repudiandae rerum
+                perferendis!
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

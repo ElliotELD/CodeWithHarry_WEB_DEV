@@ -1,0 +1,15 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+td {
+    border: 2px solid gray;
+}
+
+th {
+    border: 2px solid red;
+
+}

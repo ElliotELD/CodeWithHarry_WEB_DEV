@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid rebeccapurple;
+            /* padding: 20px; */
+            display: grid;
+            /* grid-template-areas:
+                "nav nav nav"
+                "side article article"
+                "footer footer footer"; */
+
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: (4, 1fr); */
+
+            gap: 10px;
+            /* justify-items: end; */
+            /* align-items: center; */
+            /* place-content --shorthand-- */
+            place-content: center;
+
+        }
+
+        .item {
+            width: 80px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        /* 
+        .item-1 {
+            grid-area: nav;
+        }
+
+        .item-2 {
+            grid-area: side;
+        }
+
+        .item-3 {
+            grid-area: article;
+        }
+
+        .item-4 {
+            grid-area: footer;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">Nav</div>
+        <div class="item item-2">Side</div>
+        <div class="item item-3">Article</div>
+        <div class="item item-4">Footer</div>
+        <!-- <div class="item item-5"></div> -->
+    </div>
+</body>
+
+</html>

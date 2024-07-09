@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [PEHLA]100px [DOSRA]100px;
+            grid-template-rows: 100px 100px 100px;
+
+        }
+
+        .item {
+            border: 2px solid rebeccapurple;
+            height: 60px;
+
+            width: 60px;
+
+        }
+
+        .box2 {
+            grid-column: PEHLA/DOSRA;
+            grid-row: 1/2;
+
+
+        }
+
+        .box3 {
+            /* to overlap item */
+            /* grid-column:1/2 ;
+            grid-row:1/2 ; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item ">1</div>
+        <div class="item box2">2</div>
+        <div class="item box3">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
