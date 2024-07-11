@@ -26,7 +26,7 @@ body {
 
 .main .black-box {
     background-color: black;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     opacity: .5;
     position: absolute;
@@ -90,7 +90,7 @@ nav img {
 .separation {
     height: 11px;
     width: 100%;
-    background-color: rgba(78, 76, 76, 0.608);
+    background-color: rgba(78, 76, 76, 0.427);
 }
 
 .hero-btns {
@@ -105,6 +105,9 @@ nav img {
     font-weight: bold;
     border: none;
     border-radius: 4px;
+    background-color: rgba(231, 237, 237, 0.232);
+    color: white;
+    cursor: pointer;
 }
 
 .btn-red-sm {
@@ -125,4 +128,150 @@ nav img {
     background-color: red;
     color: white;
     padding: 11px 28px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+}
+
+.sec {
+    position: relative;
+}
+
+
+.sec img {
+    width: 391px;
+    /* width: 450px; */
+    position: relative;
+    z-index: 10;
+    /* overflow: hidden; */
+
+}
+
+.sec video {
+    width: 391px;
+    /* width: 27vw; */
+    position: absolute;
+    top: 42px;
+    right: 0;
+}
+
+.first>div {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.first>div :nth-child(1) {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.first>div :nth-child(2) {
+    font-size: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.faq-box {
+    max-width: 60vw;
+    padding: 10px 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(102, 102, 103);
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+
+    transition: all .3s ease;
+
+}
+
+.faq-box:hover {
+    background-color: rgba(102, 102, 103, 0.719);
+
+
+}
+
+.faq-box span {
+    font-size: 24px;
+}
+
+svg {
+    color: white;
+
+}
+
+footer {
+    color: white;
+}
+
+footer span {
+    margin: 10px 24vw;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 50vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.btm-margin {
+    margin: 30px 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* media  */
+
+@media screen and (max-width:730px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .sec video {
+        width: 59vw;
+    }
+}
+
+@media screen and (max-width:451) {
+    nav {
+        /* background-color: rgb(153, 151, 51); */
+        /* height: 10vh; */
+        display: flex;
+        padding: 22px;
+        flex-wrap: wrap;
+        width: 95vw;
+    }
+
+    .hero span:nth-child(1) {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 40px;
+    }
 }
