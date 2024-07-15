@@ -46,7 +46,7 @@ nav {
 
 nav {
     /* height: 10vh; */
-    padding: 22px;
+    padding: 50px;
 
 }
 
@@ -63,7 +63,7 @@ nav img {
 }
 
 .hero {
-    height: calc(100% - 62px);
+    height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +145,7 @@ nav img {
 
 
 .sec img {
-    width: 391px;
+    width: 555px;
     /* width: 450px; */
     position: relative;
     z-index: 10;
@@ -154,11 +154,11 @@ nav img {
 }
 
 .sec video {
-    width: 391px;
+    width: 456px;
     /* width: 27vw; */
     position: absolute;
-    top: 42px;
-    right: 0;
+    top: 86px;
+    right: 26px;
 }
 
 .first>div {
@@ -259,11 +259,12 @@ footer span {
     }
 }
 
-@media screen and (max-width:451) {
+@media screen and (max-width:400) {
     nav {
         /* background-color: rgb(153, 151, 51); */
         /* height: 10vh; */
         display: flex;
+        flex-direction: row;
         padding: 22px;
         flex-wrap: wrap;
         width: 95vw;
